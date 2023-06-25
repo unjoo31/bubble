@@ -36,7 +36,10 @@ public class BubbleFrame extends JFrame {
     }
 
     private void initListener() {
+        // public abstract class KeyAdapter implements KeyListener
+        // keyListener인터페이스를 상속받은 KeyAdapter 추상 클래스 new
         addKeyListener(new KeyAdapter() {
+            // KeyAdapter 추상클래스의 추상 메서드 재정의
             @Override
             public void keyPressed(KeyEvent e) {
                 System.out.println(e.getKeyCode());
